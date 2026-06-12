@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bls2nwi65cm7k"]
+
+[ext_resource type="Texture2D" uid="uid://bjtnsg0xdsdfc" path="res://Board.png" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://delip40dh73eh" path="res://teste.gd" id="2_0e48y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+size = Vector2(149, 201)
+
+[node name="Node2D" type="Node2D" unique_id=1970669092]
+
+[node name="Camera" type="Camera2D" parent="." unique_id=1484471147]
+
+[node name="Board" type="Sprite2D" parent="." unique_id=331678689]
+visibility_layer = 8
+position = Vector2(0.75000954, -0.25001526)
+scale = Vector2(0.72604036, 0.65272176)
+texture = ExtResource("1_wtcfe")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=805926155]
+modulate = Color(0, 0.8980392, 0, 1)
+self_modulate = Color(0.24366936, 4.0345603e-05, 0.24372974, 1)
+top_level = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=97696069]
+use_parent_material = true
+position = Vector2(-352, 80)
+shape = SubResource("RectangleShape2D_0e48y")
+debug_color = Color(0.4392157, 1, 0, 1)
+script = ExtResource("2_0e48y")
