@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dvdtgmj076oad"]
+
+[ext_resource type="Script" uid="uid://vcwh0y3a230j" path="res://scripts/CardData.gd" id="1_6u4wf"]
+[ext_resource type="Texture2D" uid="uid://m7hxwdneqa5f" path="res://assets/cards/1.png" id="1_d81rb"]
+
+[node name="Card" type="Node" unique_id=606406368]
+script = ExtResource("1_6u4wf")
+
+[node name="CardImage" type="TextureRect" parent="." unique_id=398397552]
+offset_right = 234.0
+offset_bottom = 323.0
+texture = ExtResource("1_d81rb")
+
+[node name="NameLabel" type="Label" parent="." unique_id=1948794330]
+offset_left = 32.0
+offset_top = 166.0
+offset_right = 209.0
+offset_bottom = 189.0
+text = "Nome"
+horizontal_alignment = 1
+
+[node name="CostLabel" type="Label" parent="." unique_id=33804587]
+offset_left = 17.0
+offset_top = 17.0
+offset_right = 44.0
+offset_bottom = 61.0
+theme_override_font_sizes/font_size = 31
+text = "1"
+
+[node name="TextLabel" type="Label" parent="." unique_id=1548345053]
+offset_left = 13.0
+offset_top = 205.0
+offset_right = 227.0
+offset_bottom = 316.0
+text = "Teste 1"
